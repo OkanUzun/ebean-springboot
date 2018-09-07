@@ -35,7 +35,7 @@ public class EbeanController{
 
     @PutMapping(value = "/customer/{id}")
     public Customer updateCustomer(@PathVariable Long id, @RequestParam String name){
-        final Customer customer = Ebean.find(Customer.class, id);
+        final Customer customer = customerFinder.byId(id);
         customer.setName(name);
         customer.update();
 
