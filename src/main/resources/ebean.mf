@@ -1,0 +1,6 @@
+entity-packages: com.okan.SpringBooteBean.domain
+transactional-packages: com.okan.SpringBooteBean
+querybean-packages: com.okan.SpringBooteBean
+
+
+
